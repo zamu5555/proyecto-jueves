@@ -27,7 +27,7 @@ body {
   position: absolute;
   left: 35%;
   bottom: 10%;
-  width:  400px;
+  width: 400px;
 }
 
 
@@ -41,34 +41,21 @@ body {
 .namealeja {
   position: absolute;
   right: 73%;
-  top : 0%;
+  top: 0%;
   width: 400px;
 }
+
 .namesamuel {
   position: absolute;
   right: 38%;
-  top : 9%;
+  top: 9%;
   width: 400px;
 }
 
 .namesantiago {
   position: absolute;
   right: 4%;
-  top : 9%;
+  top: 9%;
   width: 400px;
 }
 
-.trail {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background: rgb(166, 183, 240);
-  border-radius: 50%;
-  pointer-events: none;
-  animation: fadeOut 1s forwards;
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; transform: scale(1); }
-  to { opacity: 0; transform: scale(5); }
-}
