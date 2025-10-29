@@ -38,6 +38,26 @@ body {
   width: 400px;
 }
 
+.namealeja {
+  position: absolute;
+  right: 73%;
+  top : 0%;
+  width: 400px;
+}
+.namesamuel {
+  position: absolute;
+  right: 38%;
+  top : 9%;
+  width: 400px;
+}
+
+.namesantiago {
+  position: absolute;
+  right: 4%;
+  top : 9%;
+  width: 400px;
+}
+
 .trail {
   position: fixed;
   width: 10px;
