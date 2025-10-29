@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAMUEL</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAMUEL</title>
+
+  
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="samuel.css">
+
 </head>
-<body>
-    
+
+<body
+  class="leading-normal tracking-normal bg-cover bg-fixed min-h-screen flex items-center justify-center"
+  style="background-image: url('header.png');"
+>
+
+
+  <form
+    class="bg-purple-200 bg-opacity-80 backdrop-blur-md w-full max-w-md shadow-xl rounded-2xl px-8 pt-6 pb-8 mb-4 text-center border border-purple-300"
+  >
+    <h1 class="text-2xl font-semibold text-black-100 mb-6 drop-shadow-sm">
+      Explicador de expresiones coloquiales en Inglés
+    </h1>
+
+    <div class="mb-4">
+      <input
+        id="inputText"
+        type="text"
+        placeholder="Escribe una expresión en inglés"
+        class="shadow appearance-none border border-purple-800 rounded-lg w-full p-3 text-gray-700 leading-tight focus:ring focus:ring-purple-800 focus:border-purple-400 transition duration-800 ease-in-out"
+      />
+    </div>
+
+    <div class="flex items-center justify-center pt-4">
+      <button
+        id="explainBtn"
+        type="button"
+        class="bg-gradient-to-r from-purple-500 to-purple-900 hover:from-purple-800 hover:to-purple-1000 text-white font-semibold py-2 px-6 rounded-lg shadow-md focus:ring-2 focus:ring-purple-300 transform transition hover:scale-105 duration-300 ease-in-out"
+      >
+        Explicar
+      </button>
+    </div>
+
+    <div
+      id="output"
+      class="text-purple-800 mt-6 font-medium"
+    ></div>
+  </form>
+
+  <script src="samuel.js"></script>
 </body>
 </html>
