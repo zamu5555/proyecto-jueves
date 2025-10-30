@@ -1,7 +1,7 @@
 const drink = document.getElementById('btn-drink');
 const bell = document.getElementById('recipe-drink');
 const home = document.getElementById('home-time');
-const go = document.getElementById('push-it');
+
 
 
 drink.addEventListener('click', async (event) => {
@@ -29,8 +29,8 @@ drink.addEventListener('click', async (event) => {
             }, 1500);
         }
     } catch (error) {
-        alert('Error getting drink. Please try again!');
-        bell.innerHTML = '<p> Error loading cocktail</p>';
+        alert('Error getting recipe drink. Please try again!');
+        bell.innerHTML = '<p> Error loading recipe</p>';
     }
 });
 
