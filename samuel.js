@@ -3,7 +3,7 @@ const API_URL = "https://corsproxy.io/?" + encodeURIComponent(
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + API_KEY
 );
 
-document.getElementById("explainBtn").addEventListener("click", async () => {
+document.getElementById("boton").addEventListener("click", async () => {
   const inputText = document.getElementById("inputText").value.trim();
   const outputDiv = document.getElementById("output");
 
