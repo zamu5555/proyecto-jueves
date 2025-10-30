@@ -44,7 +44,7 @@ home.addEventListener('click', () => {
 async function getDrunk() {
 
     const cocktails = ['Margarita', 'Mojito', 'Cosmopolitan', 'Martini', 'Daiquiri',
-        'Manhattan', 'Negroni', 'Old Fashioned', 'Whiskey Sour'];
+        'Manhattan', 'Negroni', 'Old Fashioned', 'Whiskey Sour','', 'Queen Bee'];
 
     const randomCocktail = cocktails[Math.floor(Math.random() * cocktails.length)];
     const url = `https://api.api-ninjas.com/v1/cocktail?name=${randomCocktail}`;
