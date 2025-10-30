@@ -17,7 +17,7 @@ drink.addEventListener('click', async (event) => {
             const drinkData = cocktail[0];
 
 
-            bell.innerHTML = '<p><strong>Here is your drink. Enjoy it!! </strong></p>';
+            bell.innerHTML = '<p><strong>Here is your recipe drink. Enjoy it!! </strong></p>';
 
 
             setTimeout(() => {
@@ -29,7 +29,7 @@ drink.addEventListener('click', async (event) => {
             }, 1500);
         }
     } catch (error) {
-        alert('Error getting drink. Please ring the bell again!');
+        alert('Error getting drink. Please try again!');
         bell.innerHTML = '<p> Error loading cocktail</p>';
     }
 });
@@ -61,11 +61,11 @@ async function getDrunk() {
         }
 
         const drinks = await response.json();
-        console.log('Here is your drink:', drinks);
+        console.log('Here is your recipe drink:', drinks);
         return drinks;
 
     } catch (error) {
-        console.error('Drink not found. Ring the bell again, please:', error);
+        console.error('Drink not found. Try again, please:', error);
         throw error;
     }
 }
