@@ -1,13 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SANTIAGO</title>
-     <link rel="icon" href="src/img/jake.gif" type="image/png">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SANTIAGO</title>
+
+  
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="santiago.css">
+   <link rel="icon" href="src/img/jake.gif" type="image/png">
+
+
 </head>
-<body>
-    
+
+<body
+  class="leading-normal tracking-normal min-h-screen flex items-center justify-center p-4"
+  style="background: linear-gradient(135deg, #667eea 0%, #53dcee 25%, #4000ff 50%, #4facfe 75%, #00f2fe 100%); background-size: 400% 400%; animation: gradient 15s ease infinite;"
+>
+  <form
+    class="bg-white bg-opacity-95 backdrop-blur-xl w-full max-w-md shadow-2xl rounded-3xl px-8 pt-8 pb-8 mb-4 text-center border border-white border-opacity-20"
+  >
+    <div class="mb-2 text-4xl">🌍</div>
+    <h1 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+      Buscador de Países
+    </h1>
+    <p class="text-gray-500 text-sm mb-6">Descubre información fascinante de cualquier país</p>
+
+    <div class="mb-6">
+      <input
+        id="inputText"
+        type="text"
+        placeholder="Ej: España, Japón, Brasil..."
+        class="shadow-lg appearance-none border-2 border-gray-200 rounded-xl w-full p-4 text-gray-700 leading-tight focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-300 ease-in-out font-medium"
+      />
+    </div>
+
+    <div class="flex items-center justify-center pt-2">
+      <button
+        id="searchBtn"
+        type="button"
+        class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg focus:ring-4 focus:ring-purple-300 transform transition hover:scale-110 duration-300 ease-in-out active:scale-95 w-full"
+      >
+        🔍 Buscar País
+      </button>
+    </div>
+
+    <div
+      id="output"
+      class="text-gray-800 mt-8 font-medium"
+    ></div>
+  </form>
+
+  <script src="santiago.js"></script>
 </body>
 </html>
